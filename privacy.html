@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eti: מדיניות פרטיות</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231A87DB' d='M19,4h-1V2h-2v2H8V2H6v2H5C3.9,4 3,4.9 3,6v14c0,1.1 0.9,2 2,2h14c1.1,0 2,-0.9 2,-2V6C21,4.9 20.1,4 19,4zM19,20H5V9h14V20z'/%3E%3Cpath fill='%231A87DB' d='M7,11h4v4H7z'/%3E%3C/svg%3E">
+<style>
+  :root { --bg: #ffffff; --ink: #111b21; --ink2: #4a5a64; --accent: #1A87DB; --rule: #e3e9ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1418; --ink: #e9eef1; --ink2: #9fb0bb; --accent: #4aa6ec; --rule: #24313c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  a { color: var(--accent); }
+  .back { font-size: 14px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 16px 0 4px; }
+  .updated { color: var(--ink2); font-size: 14px; margin: 0 0 24px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; }
+  ul { padding-right: 1.3em; padding-left: 0; }
+  li { margin: 0 0 6px; }
+  section[lang="en"] { direction: ltr; text-align: left; border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 8px; }
+  section[lang="en"] ul { padding-left: 1.3em; padding-right: 0; }
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./">&rarr; Eti</a>
+
+<h1>מדיניות פרטיות</h1>
+<p class="updated">עודכן ב-12 באוקטובר 2026</p>
+
+<p>Eti היא אפליקציית אנדרואיד שהופכת הודעה שבחרתם לאירוע ביומן, למשימה או להתראה. כאן מוסבר איזה מידע היא קוראת, לאן הוא נשלח ומה נשמר.</p>
+
+<h2>מה Eti קוראת, ומתי</h2>
+<ul>
+  <li>Eti קוראת את המסך רק כשאתם לוחצים על הכפתור שלה ואחר כך על הודעה. היא לא קוראת את המסך ברקע.</li>
+  <li>באותו רגע היא מקבלת מאנדרואיד את הטקסט שעל המסך (ובהגדרה מסוימת גם צילום מסך), ושולחת את ההודעה שבחרתם ואת ההודעות שסביבה כדי לזהות תאריך, שעה, מקום ומשתתפים.</li>
+</ul>
+
+<h2>לאן המידע נשלח</h2>
+<ul>
+  <li>הטקסט, או צילום המסך, נשלח דרך שרת מתווך של Eti (Cloudflare Workers) אל Claude, מודל הבינה המלאכותית של Anthropic, שמחזיר את פרטי האירוע או המשימה.</li>
+  <li>השרת המתווך לא שומר את תוכן ההודעות. הוא סופר בקשות לכל התקנה לפי מזהה אקראי שנוצר בהתקנה, כדי להגביל שימוש, והמונים נמחקים אחרי יומיים. המזהה לא קשור לטלפון, למספר או לחשבון שלכם.</li>
+  <li>Anthropic מעבדת את התוכן כדי להחזיר תשובה, לפי תנאי ה-API שלה. פרטים במדיניות הפרטיות של Anthropic: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.</li>
+</ul>
+
+<h2>חשבון Google</h2>
+<ul>
+  <li>אם תחברו חשבון Google, Eti תיצור ותעדכן אירועים ביומן Google ומשימות ב-Google Tasks, תקרא את רשימת היומנים שלכם כדי שתבחרו יומן, ותקרא אירועים ומשימות קיימים כדי לא ליצור כפילויות.</li>
+  <li>המידע מ-Google נשאר בטלפון ונשלח רק אל Google. הוא לא נשלח לשרת המתווך, ל-Anthropic או לאף אחד אחר, ולא משמש לפרסום או לאימון מודלים.</li>
+  <li>השימוש של Eti במידע שהתקבל מממשקי Google עומד ב-<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, כולל דרישות ה-Limited Use.</li>
+  <li>אפשר לנתק את Eti מחשבון Google בכל עת בהגדרות האפליקציה, או בדף <a href="https://myaccount.google.com/permissions">ההרשאות של חשבון Google</a>.</li>
+</ul>
+
+<h2>מה נשמר בטלפון</h2>
+<ul>
+  <li>ההודעות שנקראו והפריטים שנמצאו בהן נשמרים רק בטלפון, כדי לזהות פריט שכבר נוצר. הסרת האפליקציה מוחקת אותם.</li>
+  <li>הרשאת "גישה לנתוני שימוש", אם תאשרו אותה, משמשת רק בטלפון כדי לדעת איזו אפליקציה פתוחה, ולהציג את הכפתור רק איפה שבחרתם.</li>
+  <li>תזכורות ש-Eti מצלצלת בעצמה נשמרות בטלפון עד שהן מצלצלות.</li>
+</ul>
+
+<h2>מה Eti לא עושה</h2>
+<ul>
+  <li>אין פרסומות, אין כלי ניתוח או מעקב, ואין מכירה או שיתוף של מידע עם צד שלישי מעבר למתואר כאן.</li>
+</ul>
+
+<h2>שינויים ויצירת קשר</h2>
+<p>אם המדיניות תשתנה, הגרסה המעודכנת תופיע בדף הזה עם תאריך חדש. לשאלות ובקשות: <a href="https://github.com/sdafni/eti/issues">github.com/sdafni/eti/issues</a>.</p>
+
+<section lang="en">
+<h2>Privacy policy (English)</h2>
+<p class="updated">Updated October 12, 2026</p>
+<p>Eti is an Android app that turns a message you choose into a calendar event, a task, or an alarm.</p>
+<ul>
+  <li><strong>When it reads.</strong> Only when you tap Eti's button and then a message. It never reads the screen in the background.</li>
+  <li><strong>What it sends.</strong> The text you selected and the messages around it (or, in one setting, a screenshot) go through Eti's relay server (Cloudflare Workers) to Anthropic's Claude model, which returns the event or task details. The relay does not store message content. It keeps per-install request counts, keyed by a random ID created at install and unrelated to your phone, number or accounts, to limit usage; the counts expire after two days. Anthropic processes the content to return an answer under its API terms (<a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>).</li>
+  <li><strong>Google user data.</strong> If you connect a Google account, Eti creates and updates events in Google Calendar and tasks in Google Tasks, reads your calendar list so you can choose a calendar, and reads existing events and tasks to avoid duplicates. This data stays on your phone and is exchanged only with Google. It is never sent to the relay, to Anthropic, or to anyone else, and is not used for advertising or to train AI models. Eti's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. You can disconnect Eti in its settings or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  <li><strong>On the phone.</strong> Messages read and items found are stored only on the phone, to recognize items already created; uninstalling the app removes them. Usage access, if you grant it, is used only on the phone to tell which app is open. Reminders Eti rings itself are stored on the phone until they ring.</li>
+  <li><strong>No ads, no analytics, no tracking,</strong> and no sale or sharing of data beyond what is described here.</li>
+  <li><strong>Contact.</strong> <a href="https://github.com/sdafni/eti/issues">github.com/sdafni/eti/issues</a>. Changes to this policy will be posted on this page with a new date.</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
